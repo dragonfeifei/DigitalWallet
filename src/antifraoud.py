@@ -2,11 +2,6 @@ import argparse
 import csv
 import networkx as nx
 
-def read_csv_file(fileName):
-    with open(fileName) as csvfile:
-        reader = csv.DictReader(csvfile)
-        return reader
-
 class Verifier:
     def __init__(self, outputRepo):
         self.outputRepo = outputRepo
